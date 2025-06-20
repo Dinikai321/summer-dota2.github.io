@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход/Регистрация</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="bg-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="login-container">
+        <a href="index.html" class="home-button"><i class="fas fa-home"></i></a>
+        <h2 id="form-title">Вход</h2>
+        <form id="loginForm">
+            <div id="email-field" style="display: none;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div id="confirm-password-field" style="display: none;">
+                <label for="confirm-password">Подтвердите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+
+            <button type="submit" id="submit-button">Войти</button>
+        </form>
+        <button type="button" class="toggle-form-button" id="toggleFormButton">Нет аккаунта? Зарегистрироваться</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
